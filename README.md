@@ -59,19 +59,13 @@ Earthquakes cause significant human and economic losses. Accurately predicting t
     git clone https://github.com/your-repo-link/Earthquake-Magnitude-Prediction.git
     cd Earthquake-Magnitude-Prediction
     ```
-2.  **Install dependencies:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-    *   Note : Si vous n'avez pas de fichier `requirements.txt`, vous pouvez l'enlever ou créer un tel fichier.
 3.  **Usage**
     *   Place the dataset (`earthquakes.csv`) in the project directory.
     *   Open the Jupyter Notebook:
 
         ```bash
-        jupyter notebook Earthquake_Project_v2.ipynb
+        jupyter notebook Earthquake_Project_.ipynb
         ```
     *   Run the cells to preprocess the data, train the models, and evaluate performance.
 
@@ -86,8 +80,8 @@ Earthquakes cause significant human and economic losses. Accurately predicting t
 
 ## 👥 Contributors
 
+*   MAJDOUBI Ilyas
 *   El Hilali Nabil
-*   Majdoubi Ilyas
 *   El Magroua Rachid
 *   Darraz Anas
 
