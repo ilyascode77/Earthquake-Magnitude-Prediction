@@ -56,7 +56,7 @@ Earthquakes cause significant human and economic losses. Accurately predicting t
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-repo-link/Earthquake-Magnitude-Prediction.git
+    git clone https://github.com/ilyascode77/Earthquake-Magnitude-Prediction.git
     cd Earthquake-Magnitude-Prediction
     ```
 
