@@ -1,4 +1,4 @@
-Earthquake Magnitude Prediction using Machine Learning
+#Earthquake Magnitude Prediction using Machine Learning
 Overview
 This project focuses on predicting earthquake magnitudes using advanced machine learning techniques. Each year, thousands of earthquakes occur worldwide, causing significant human and economic losses. By leveraging regression models and robust data preprocessing, this project aims to develop a system that provides accurate earthquake magnitude predictions, ultimately aiding disaster preparedness and response strategies.
 
