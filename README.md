@@ -1,78 +1,50 @@
 Earthquake Magnitude Prediction using Machine Learning
-📖 Overview
-This project focuses on predicting earthquake magnitudes using machine learning techniques. By leveraging regression models and advanced data preprocessing, we aim to create an efficient system for estimating earthquake magnitudes, contributing to disaster preparedness and response efforts.
+Overview
+This project focuses on predicting the magnitude of earthquakes using machine learning techniques. Predicting earthquake magnitude is a crucial task for disaster preparedness and mitigation efforts. This repository contains the code, data analysis, and model development for a system designed to estimate earthquake magnitudes based on various seismic features. We explore different regression models to identify the most effective approach for this predictive task.
 
-🛠 Problem Statement
-Earthquakes cause significant human and economic losses. Accurately predicting their magnitude can improve early warning systems and better inform response strategies. This project uses machine learning to move beyond traditional statistical methods, providing a robust and reliable prediction model.
+Problem Statement
+Earthquakes are devastating natural disasters that cause significant loss of life and property damage. Accurate prediction of their magnitude can significantly improve early warning systems and inform better response strategies. This project aims to leverage machine learning to develop a robust and reliable model for earthquake magnitude prediction, moving beyond traditional statistical methods.
 
-🔍 Methodology
-1. Exploratory Data Analysis
-Objective: Understand the dataset and relationships between features.
-Key Features:
-Magnitude: Measure of the seismic energy released.
-Depth: Depth of the earthquake’s epicenter.
-Latitude/Longitude: Geographic coordinates of the epicenter.
-Alert: Categorized alert levels ('green', 'yellow', 'orange', 'red').
-Significance: A score summarizing the earthquake's importance.
-2. Data Preprocessing
-Handling Missing Values:
-Imputed missing values in the alert column using Random Forest.
-Removed columns with excessive missing values and low relevance.
-Outlier Detection:
-Applied the Interquartile Range (IQR) method to handle extreme values.
-Encoding:
-Used Ordinal Encoding to convert alert levels ('green', 'yellow', etc.) into numerical values.
-Feature Selection:
-Retained predictive features, removing irrelevant ones.
-3. Model Development
-Data Split:
-Divided data into 80% training and 20% testing sets.
-Algorithms Used:
-Random Forest Regressor: Ensemble learning method combining decision trees.
-Gradient Boosting Regressor: Sequentially minimizes errors for improved performance.
-Hyperparameter Tuning:
-Used GridSearchCV for optimizing model parameters with 5-fold cross-validation.
-4. Model Evaluation
-Evaluated using the following metrics:
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-R-squared (R²)
-5. Model Selection
-Gradient Boosting Regressor emerged as the best-performing model with:
-MAE: 0.0265
-MSE: 0.0034
-🚀 Getting Started
+Methodology
+Our approach involved the following key steps:
+
+Data Acquisition and Exploration:
+
+We utilized a publicly available dataset of historical earthquake events, containing various physical and geographical measurements.
+Exploratory Data Analysis (EDA) was performed to understand the data distribution, identify potential anomalies, and discover relationships between features. This included statistical analysis and visualizations.
+Data Preprocessing:
+
+Handling Missing Values: Strategies were implemented to address missing data points, such as imputation or removal, based on the nature and extent of missingness.
+Outlier Treatment: Techniques like Winsorization were applied to mitigate the influence of extreme values in relevant features.
+Feature Engineering (Minimal in this version): While not extensively explored here, potential future work could involve creating new features from existing ones.
+Data Transformation:
+Normalization: Numerical features were scaled to a uniform range (0 to 1) to ensure that no single feature unduly influences the models and to improve convergence speed.
+Log Transformation: Applied to features with skewed distributions (e.g., number of stations) to reduce skewness and potentially improve model performance.
+Irrelevant Column Removal: Columns that were deemed non-predictive or redundant (like identifiers or highly granular location details) were removed to reduce noise and complexity.
+Model Development and Training:
+
+We experimented with several regression models to predict earthquake magnitude:
+Linear Regression: A baseline model for establishing linear relationships between features and the target variable.
+Random Forest Regressor: An ensemble learning method that combines multiple decision trees to improve prediction accuracy and robustness, capable of capturing non-linear relationships.
+Gradient Boosting Regressor: Another powerful ensemble method that builds models sequentially, correcting errors from previous models, often achieving high predictive accuracy.
+The dataset was split into training (80%) and testing (20%) sets to evaluate the generalization performance of the models.
+Models were trained using the training data.
+Model Evaluation and Comparison:
+
+The performance of each model was evaluated on the testing dataset using appropriate regression metrics:
+R-squared (R²): Indicates the proportion of the variance in the dependent variable that is predictable from the independent variables. A higher R² suggests a better fit.
+Root Mean Squared Error (RMSE): Measures the average magnitude of the errors between predicted and actual values. A lower RMSE indicates better performance.
+The performance metrics were compared to determine the most effective model for earthquake magnitude prediction.
+Model Selection:
+
+Based on the evaluation metrics, the Gradient Boosting Regressor emerged as the best-performing model for this task, demonstrating the highest R² and lowest RMSE on the test data.
+Getting Started
+Follow these steps to run the code and replicate the results:
+
 Prerequisites
 Python 3.x
-Libraries: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
+pip (Python package installer)
 Installation
 Clone the repository:
-bash
-Copier le code
-git clone https://github.com/your-repo-link/Earthquake-Magnitude-Prediction.git
-cd Earthquake-Magnitude-Prediction
-Install dependencies:
-bash
-Copier le code
-pip install -r requirements.txt
-Usage
-Place the dataset (earthquakes.csv) in the project directory.
-Open the Jupyter Notebook:
-bash
-Copier le code
-jupyter notebook Earthquake_Project_v2.ipynb
-Run the cells to preprocess the data, train the models, and evaluate performance.
-📈 Results
-Best Model: Gradient Boosting Regressor
-Performance Metrics:
-MAE: 0.0265
-MSE: 0.0034
-Visualizations and metrics are included in the notebook for detailed insights.
-
-👥 Contributors
-El Hilali Nabil
-Majdoubi Ilyas
-El Magroua Rachid
-Darraz Anas
-🏁 Conclusion
-Predicting earthquake magnitudes is essential for mitigating disaster impacts. By combining advanced machine learning models and robust data preprocessing, this project demonstrates the potential of AI in improving seismic risk management.
+git clone https://github.com/Anoirbelabbes/Earthquake_magnitude-prediction.git
+cd Earthquake_magnitude-prediction
