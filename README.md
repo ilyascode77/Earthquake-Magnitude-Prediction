@@ -78,7 +78,7 @@ Earthquakes cause significant human and economic losses. Accurately predicting t
 
     *Visualizations and metrics are included in the notebook for detailed insights.*
 
-## 👥 Contributors
+## 👥 **Team**
 
 *   MAJDOUBI Ilyas
 *   El Hilali Nabil
